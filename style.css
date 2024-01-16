@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+  
+    font-family: 'Poppins' , sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #080808;
+    color: white;
+    /* background-color: black; */
+    
+}
+
+#header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/resumepicture-removebg-preview\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: bottom right;
+    /* position: fixed; */
+
+    background-position-y: 100px;
+}
+
+.container {
+    padding: 10px 10%;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+
+nav img {
+    width: auto;
+    height: 70px;
+    
+}
+
+
+
+.container nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+.container nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+    transition: 0.6s;
+
+}
+.container nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+.header-text {
+    margin: 20% 20px;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 70px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+
+
+
+/* ------------about------------ */
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col_1{
+    flex-basis: 35%;
+}
+.row img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col_2{
+    flex-basis: 60%;
+}
+
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.paragraph{
+    font-size: 14px;
+}
+.tabtitles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: white;
+    position: relative;
+}
+.tablinks{
+    justify-content: center;
+    align-items: center;
+    border: #ff004f 2px solid;
+    border-radius: 10px;
+    width: 30%;
+    background-color: #262626;
+    height: 390px;
+    padding: 15px;
+    position: relative;
+    cursor:default;
+    transition: transform 0.5s;
+}
+
+
+.tablinks:hover{
+    /* width: 100%; */
+    border: #ff004f 3px solid;
+    box-shadow: 0px 7px 20px #ff004f;
+    transition: .6s;
+    
+    transform: translateY(-10px);
+
+}
+
+
+
+.tablinks span{
+    display: flexbox;
+    position: relative;
+
+    /* justify-content: center; */
+    align-items: center;
+    /* margin: 50px ; */
+    /* padding: 0px 20px; */
+    margin: 0px 25px;
+    font-size: 25px;
+}
+
+.tablinks span::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+    transition: 0.6s;
+
+}
+.tablinks span:hover::after{
+    width: 100%;
+}
+
+
+
+.tablinks ul{
+    list-style:square;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    color:#ababab;
+}
+.tablinks ul li{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: space-evenly; */
+    margin: 0px 10px;
+}
+
+
+
+/* ___________portfolio________________ */
+
+#portfolio{
+    padding: 50px 0px ;
+}
+#portfolio h1{
+    margin-bottom: 50px;
+}
+
+.worklist{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: white;
+    position: relative;
+}
+
+.worktitle{
+    justify-content: center;
+    align-items: center;
+    border: #ff004f 2px solid;
+    border-radius: 10px;
+    background-color: #262626;
+    width: 30%;
+    height: 70vh;
+    padding: 15px;
+    position: relative;
+    cursor:default;
+    transition: transform 0.5s;
+}
+
+
+.worktitle:hover{
+    /* width: 100%; */
+    border: #ff004f 3px solid;
+    box-shadow: 0px 7px 20px #ff004f;
+    transition: .6s;
+    
+    transform: translateY(-10px);
+
+}
+
+
+
+.worktitle span{
+    display: flexbox;
+    position: relative;
+
+    /* justify-content: center; */
+    align-items: center;
+    /* margin: 50px ; */
+    /* padding: 0px 20px; */
+    margin: 0px 25px;
+    font-size: 25px;
+}
+
+.worktitle span::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+    transition: 0.6s;
+
+}
+.worktitle span:hover::after{
+    width: 100%;
+}
+
+
+
+.worktitle ul{
+    list-style:square;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    color:#ababab;
+}
+.worktitle ul li{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: space-evenly; */
+    margin: 0px 10px;
+}
+
+
+
+/* --------------contact me------------- */
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+
+}
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn{
+    display: inline-flex;
+    padding: 10px 20px;
+    background-color: #ff004f;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    transition: transform 0.5s;
+}
+.btn:hover{
+    background-color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 5px;
+    cursor: pointer;
+}
