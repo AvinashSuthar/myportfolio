@@ -10,17 +10,9 @@ btn.addEventListener("click" , function(){
     let dbtn = document.createElement("button");
     dbtn.classList.add("delete");
     dbtn.innerText = "delete" ;
-
-
-
     ul.appendChild(item);
     item.appendChild(dbtn);
     console.log(input.value);
-
-
-
-
-
 });
 
 ul.addEventListener("click" , function(event){
